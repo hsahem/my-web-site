@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Message -->
+        <div class="welcome-message">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Welcome! You are among the first 100 subscribers.</h1>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="qr-code">
+            <h2>Scan this QR Code to visit the site:</h2>
+            <div id="qr-code"></div>
+        </div>
+
+        <!-- User Data Collection Form -->
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form id="user-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Confirmation Message -->
+        <div id="confirmation-message" class="confirmation-message">
+            <p>Thank you for signing up!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
